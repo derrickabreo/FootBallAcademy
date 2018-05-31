@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1039844839138",
+    "firebase_url": "https://footballacademy-3904c.firebaseio.com",
+    "project_id": "footballacademy-3904c",
+    "storage_bucket": "footballacademy-3904c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039844839138:android:23dbe5ce51512f4b",
+        "android_client_info": {
+          "package_name": "ml.derrickabreo.footballacademy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039844839138-2b8df0jnkd02hnfa92sf73h9s45d6bo8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ml.derrickabreo.footballacademy",
+            "certificate_hash": "914710fa5fe6dcebacdb5b76290d443c89486789"
+          }
+        },
+        {
+          "client_id": "1039844839138-9ud5ruajrphh86p4c5ameggk4nau2i9j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1039844839138-9ud5ruajrphh86p4c5ameggk4nau2i9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMeFACWqOaL464oddQu7trolntCtfazAk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039844839138-9ud5ruajrphh86p4c5ameggk4nau2i9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

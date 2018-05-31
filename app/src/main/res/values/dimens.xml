@@ -9,4 +9,8 @@
     <!-- Today Fragment RecycleView -->
     <dimen name="today_fragment_text_large">24sp</dimen>
     <dimen name="today_fragment_text_medium">16sp</dimen>
+
+    <!-- Finished Fragment RecycleView -->
+    <dimen name="finished_fragment_text_large">24sp</dimen>
+    <dimen name="finished_fragment_text_medium">16sp</dimen>
 </resources>
