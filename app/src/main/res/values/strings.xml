@@ -9,4 +9,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home Fragment Tabbed Titles -->
+    <string name="home_fragment_tabbed_today">Today</string>
+    <string name="home_fragment_tabbed_upcoming">Upcoming</string>
+    <string name="home_fragment_tabbed_completed">Completed</string>
+
+    <!-- Today Fragmeny RecyclerView-->
+    <string name="today_fragment_recycler_vs">Vs</string>
+
 </resources>
