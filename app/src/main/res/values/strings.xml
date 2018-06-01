@@ -21,4 +21,11 @@
     <!-- Today Fragmeny RecyclerView-->
     <string name="finished_fragment_recycler_vs">Vs</string>
 
+    <!-- Today Fragmeny RecyclerView-->
+    <string name="upcoming_fragment_recycler_vs">Vs</string>
+
+
+
+
+
 </resources>

@@ -13,4 +13,8 @@
     <!-- Finished Fragment RecycleView -->
     <dimen name="finished_fragment_text_large">24sp</dimen>
     <dimen name="finished_fragment_text_medium">16sp</dimen>
+
+    <!-- Upcoming Fragment RecycleView -->
+    <dimen name="upcoming_fragment_text_large">24sp</dimen>
+    <dimen name="upcoming_fragment_text_medium">16sp</dimen>
 </resources>
