@@ -24,7 +24,7 @@ import ml.derrickabreo.footballacademy.data.data.models.today;
  * A simple {@link Fragment} subclass.
  */
 public class TodayTabbedFragment extends Fragment {
-    //TODO solve the error(App crashes when run)
+    //TODO Data is not being fetched from FireStore
     private RecyclerView mRecyclerView;
     private FirebaseFirestore mFirestore;
     private FirestoreRecyclerAdapter mAdapter;

@@ -28,7 +28,6 @@ public class FinishedTabbedFragment extends Fragment {
 
     private RecyclerView mRecyclerView;
     private FirebaseFirestore mFirestore;
-    private LinearLayoutManager mLinearLayoutManager;
     private FirestoreRecyclerAdapter mAdapter;
     private Context mContext;
 
@@ -38,7 +37,7 @@ public class FinishedTabbedFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_finished_tabbed, container, false);
@@ -50,6 +49,7 @@ public class FinishedTabbedFragment extends Fragment {
     }
 
     private void init() {
+        LinearLayoutManager mLinearLayoutManager;
         mLinearLayoutManager = new LinearLayoutManager(mContext);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
         mRecyclerView.setHasFixedSize(true);
