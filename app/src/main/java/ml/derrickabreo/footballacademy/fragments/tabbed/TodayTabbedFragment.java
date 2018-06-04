@@ -44,6 +44,7 @@ public class TodayTabbedFragment extends Fragment {
         mContext = view.getContext();
         mRecyclerView = view.findViewById(R.id.today_tabbed_recyclerview);
         init();
+        getPlayerList();
         return view;
     }
 

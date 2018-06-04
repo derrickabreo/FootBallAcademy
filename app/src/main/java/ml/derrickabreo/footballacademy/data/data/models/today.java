@@ -26,15 +26,15 @@ public class today {
         return mTime;
     }
 
-    public void setTeam1(String team1) {
-        mTeam1 = team1;
+    public void setTeam1(String Team1) {
+        mTeam1 = Team1;
     }
 
-    public void setTeam2(String team2) {
-        mTeam2 = team2;
+    public void setTeam2(String Team2) {
+        mTeam2 = Team2;
     }
 
-    public void setTime(String time) {
-        mTime = time;
+    public void setTime(String Time) {
+        mTime = Time;
     }
 }
