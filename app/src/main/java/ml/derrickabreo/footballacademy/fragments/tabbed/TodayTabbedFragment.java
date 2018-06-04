@@ -24,10 +24,9 @@ import ml.derrickabreo.footballacademy.data.data.models.today;
  * A simple {@link Fragment} subclass.
  */
 public class TodayTabbedFragment extends Fragment {
-
+    //TODO solve the error(App crashes when run)
     private RecyclerView mRecyclerView;
     private FirebaseFirestore mFirestore;
-    private LinearLayoutManager mLinearLayoutManager;
     private FirestoreRecyclerAdapter mAdapter;
     private Context mContext;
 
@@ -49,6 +48,7 @@ public class TodayTabbedFragment extends Fragment {
     }
 
     private void init() {
+        LinearLayoutManager mLinearLayoutManager;
         mLinearLayoutManager = new LinearLayoutManager(mContext);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
         mRecyclerView.setHasFixedSize(true);
@@ -57,9 +57,9 @@ public class TodayTabbedFragment extends Fragment {
 
     private void getPlayerList(){
 
-        Query query = mFirestore.collection("Today");
+        Query query = mFirestore.collection("Today").limit(10);
         FirestoreRecyclerOptions<today> response = new FirestoreRecyclerOptions.Builder<today>()
-                .setQuery(query,today.class)
+                .setQuery(query, today.class)
                 .build();
         mAdapter = new FirestoreRecyclerAdapter<today, TodayViewHolder>(response) {
 
@@ -80,6 +80,18 @@ public class TodayTabbedFragment extends Fragment {
         };
         mRecyclerView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mAdapter.stopListening();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mAdapter.startListening();
     }
 
 }

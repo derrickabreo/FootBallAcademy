@@ -38,7 +38,7 @@ public class UpcomingTabbedFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_upcomming_tabbed, container, false);
@@ -56,7 +56,7 @@ public class UpcomingTabbedFragment extends Fragment {
         mFirestore = FirebaseFirestore.getInstance();
     }
 
-    private void getPlayerList(){
+    private void getPlayerList() {
 
         Query query = mFirestore.collection("Upcoming");
         FirestoreRecyclerOptions<upcoming> response = new FirestoreRecyclerOptions.Builder<upcoming>()
@@ -81,6 +81,18 @@ public class UpcomingTabbedFragment extends Fragment {
         };
         mRecyclerView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mAdapter.stopListening();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mAdapter.startListening();
     }
 
 }
