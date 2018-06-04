@@ -9,6 +9,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="catch_the_game">Catch The Game At %s</string>
 
     <!-- Home Fragment Tabbed Titles -->
     <string name="home_fragment_tabbed_today">Today</string>
