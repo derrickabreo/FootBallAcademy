@@ -2,39 +2,39 @@ package ml.derrickabreo.footballacademy.data.data.models;
 
 public class today {
 
-    private String mTeam1,mTeam2,mTime;
+    private String Team1,Team2,Time;
 
     public today(){
 
     }
 
     public today(String Team1,String Team2,String Time) {
-        this.mTeam1=Team1;
-        this.mTeam2=Team2;
-        this.mTime=Time;
+        this.Team1=Team1;
+        this.Team2=Team2;
+        this.Time=Time;
     }
 
     public String getTeam1() {
-        return mTeam1;
+        return Team1;
     }
 
     public String getTeam2() {
-        return mTeam2;
+        return Team2;
     }
 
     public String getTime() {
-        return mTime;
+        return Time;
     }
 
     public void setTeam1(String Team1) {
-        mTeam1 = Team1;
+        Team1 = Team1;
     }
 
     public void setTeam2(String Team2) {
-        mTeam2 = Team2;
+        Team2 = Team2;
     }
 
     public void setTime(String Time) {
-        mTime = Time;
+        Time = Time;
     }
 }

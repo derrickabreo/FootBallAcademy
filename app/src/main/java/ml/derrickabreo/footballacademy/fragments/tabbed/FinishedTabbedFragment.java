@@ -42,7 +42,7 @@ public class FinishedTabbedFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_finished_tabbed, container, false);
         mContext = view.getContext();
-        mRecyclerView = view.findViewById(R.id.today_tabbed_recyclerview);
+        mRecyclerView = view.findViewById(R.id.finished_tabbed_recyclerview);
         init();
         getPlayerList();
         return view;

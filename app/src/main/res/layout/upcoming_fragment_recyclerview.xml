@@ -57,7 +57,7 @@
                 android:layout_marginStart="82dp"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:fontFamily="@font/roboto"
-                android:text="Vs"
+                android:text="@string/today_fragment_recycler_vs"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/upcoming_fragment_text_large"
                 app:layout_constraintEnd_toStartOf="@+id/upcoming_fragment_team2_tv"
@@ -66,7 +66,7 @@
 
             <TextView
                 android:id="@+id/upcoming_fragment_date_tv"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginEnd="114dp"
